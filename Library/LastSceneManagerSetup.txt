@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/thomas/Documents/GitHub/jeremysbuild/Genome3DUnity/Genome3DUnity/Genome3D/Assets/Scenes/TestRotation.unity
+- path: Assets/Scenes/Level.unity
   isLoaded: 1
   isActive: 1
