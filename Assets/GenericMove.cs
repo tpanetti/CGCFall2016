@@ -17,7 +17,7 @@ public class GenericMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	 movSpeed = 50.0f;
-   jumpForce = 30.0f;
+   jumpForce = 1500.0f;
    shootSpeed = 300.0f;
    canJump = true;
 
@@ -38,7 +38,7 @@ public class GenericMove : MonoBehaviour {
 
     if(Input.GetKeyDown(this.jump) && this.canJump) {
         // this.canJump = false;
-      this.transform.Translate(Vector2.up*jumpForce);
+	GetComponent<Rigidbody2D>().AddForce(transform.up*jumpForce);
     }
     if(Input.GetKeyDown(this.shoot)) {
       //TODO: this
